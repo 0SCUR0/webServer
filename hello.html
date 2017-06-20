@@ -1,0 +1,140 @@
+<style type="text/css">
+body{background-color: #2C2C2C;}
+h1{font-family: helvetica; color: #DDDDDD;}
+legend{color: #AEAEAE; font-family: Consolas, monospace;  font-size:0.9125em;font-family: helvetica; color: #DDDDDD;}
+p{color: #AEAEAE; font-family: Consolas, monospace;  font-size:0.8125em;}
+p.monospaced{height: 0px; background-color: red;}
+div{border-style: solid; border-color: #FE8A00; text-align: center; margin-bottom: 6px; padding: 12px;}
+</style>
+<head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /></head>
+<body>
+	<h1> NAIMA NET</h1>
+	<!-- <p> inside html </p> -->
+
+		<div>
+			<p>AJAX</p>
+		</div>
+		<div>
+			<form>
+				<fieldset>
+					<p>GET / POST methods</p>
+						<form action='/get' method='get'>
+							<input type="text" id="a" name="a" placeholder="get" />
+							<input type='submit' value='GET'>
+						</form>
+						<form target="_blank" action='/post' method='post'>
+							<input type="text" id="name" name="name" placeholder="Enter your full name" />
+							<input type='submit' value='POST'>
+						</form>
+				</fieldset>
+			</form>
+		</div>
+		<div>
+			<p> text </p>
+		</div>
+		<div>
+			<p> text embedded</p>
+			<h1> <object data="hello_world.txt"></object></h1>
+		</div>
+		<div>
+			<p> image png</p>
+			<img src="img_00.png">
+		</div>
+		<div>
+			<p> image jpg</p>
+			<img src="img_jpg.jpg">
+		</div>
+		<div>
+			<p> image gif</p>
+			<img src="img_gif.gif">
+		</div>
+		<div>
+			<p> svg inline</p>
+			<svg width="100" height="100">
+  				<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+			</svg>
+		</div>
+		<div>
+			<p> svg embedded</p>
+			<embed src="logo-iki-01.svg">
+		</div>
+		<div>
+			<p> JS inline</p>
+			<script type="text/javascript">
+				document.open();
+				document.write("<h1>Hello World</h1>");
+				document.close();
+			</script>
+		</div>
+		<div>
+			<p> JS embedded</p>
+			<script src="hello_world.js"></script>
+		</div>
+		<div>
+			<p> link </p>
+			<a href="http://www.google.com/">Google</a>
+			<a href="/hello_world.txt">TXT file</a>
+		</div>
+		<div>
+			<form>
+				<fieldset>
+					<legend>filedset legend</legend>
+					fieldset
+					<label>input label</label>
+					<input value='input'>
+					<input list="browsers">
+						<datalist id="browsers">
+						  <option value="Internet Explorer">
+						  <option value="Firefox">
+						  <option value="Chrome">
+						  <option value="Opera">
+						  <option value="Safari">
+						</datalist>
+					<textarea>textarea</textarea>
+					<select>
+						<option>option 1</option>
+						<option>option 2</option>
+						<option value='option3  value'>option 3</option>
+						<optgroup label="optgroup">
+							<option value="volvo">optgroup option 1</option>
+							<option value="saab">optgroup option 2</option>
+						</optgroup>
+					</select>
+					<button >button</button>
+				</fieldset>				
+				<fieldset>
+					<legend>HTML5 form</legend>
+					
+					<keygen>keygen</keygen>
+					<output>output</output>
+				</fieldset>
+				
+			</form>	
+		</div>
+		<div>
+			<p>audio</p>
+		</div>
+		<div>
+			<p>canvas</p>
+		</div>
+		<div>
+			<p>audio in</p>
+		</div>
+		<div>
+			<p>webcam</p>
+		</div>
+		<div>
+			<p>joystick / keyboard / mice</p>
+		</div>
+
+<!--┌─┐ ┌┬┐ [example of line drawing characters]
+	│ │ ├┼┤ [requires fixed-width, especially with spaces]
+	└─┘ └┴┘ -->
+
+	<p class='monospaced'>'` ' &nbsp;^&nbsp;    ' '`´' &nbsp;^   </p>
+	<p class='monospaced'>| \| / \ |  |&nbsp;   | / \       </p>
+	<br>
+	<p class='monospaced'>|\| /\ | /\/\ /\</p>
+
+
+</body>
